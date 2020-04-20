@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+body 
+    {
+    background-color: lightblue;
+     }
+div.Toppart 
+    {
+    text-align: center ;
+    }
+
+h1,h2{
+    font-family: 'Sriracha', cursive;
+}
+
+.btn:hover /*เปลี่ยนสีเมื่อเอา mouse ไปชี้ */
+    {
+        background-color: #6633FF ;
+        border-color: #990000;
+    }    
+.btn:active /*เปลี่ยนสีเมื่อเอา mouse คลิก */
+    {
+        background-color: green ;
+        border-color: #990000;
+    }
+.btn:visited /*จะเปลี่ยนสีเมื่อเคย กด Link หรือปุ่มไปแล้ว*/
+    {
+        background-color: red ;
+        border-color: #990000;
+    }        
+
+.btn
+    {
+        background-color: yellow ;
+        border-color: #990000;
+    }
+
+.center {
+        text-align: center;
+        border: 3px solid green;
+      }
+      
