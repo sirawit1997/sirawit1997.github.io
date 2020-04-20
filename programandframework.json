@@ -36,7 +36,7 @@
         "path" : "./images/devc.png"
     },
     {
-        "path" : "./images/intellij.png"
+        "path" : "./images/IntelliJ.png"
     },
     {
         "path" : "./images/photoshop.png"
@@ -47,4 +47,5 @@
     {
         "path" : "./images/Illustrator.png"
     }
+
 ]
