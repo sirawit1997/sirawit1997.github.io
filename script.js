@@ -33,7 +33,7 @@ $(document).ready(function(){
     });
 
     // Normal Function of javascript
-    $.getJSON("./skill.json", function(result){
+    $.getJSON("./programingskill.json", function(result){
         console.log(result);
         var x = '';
         result.forEach(function(doc) {
@@ -42,11 +42,41 @@ $(document).ready(function(){
             '</div><br>' 
         });
 
-
         $('.language').html(x);
     });
 
+    $.getJSON("./businessskill.json", function(result){
+        console.log(result);
+        var x = '';
+        result.forEach(function(doc) {
+            x  += '<div class="progress">' +
+            '<div class="progress-bar bg-danger" style="width:'+  doc.progress +'%">'+doc.language+'</div>&nbsp;'+ doc.progress +'%'+
+            '</div><br>' 
+        });
 
+        $('.business').html(x);
+    });
 
-  
+    $.getJSON("./otherskill.json", function(result){
+        console.log(result);
+        var x = '';
+        result.forEach(function(doc) {
+            x  += '<div class="progress">' +
+            '<div class="progress-bar bg-info" style="width:'+  doc.progress +'%">'+doc.language+'</div>&nbsp;'+ doc.progress +'%'+
+            '</div><br>' 
+        });
+
+        $('.other').html(x);
+    });
+
+    //Loop image
+    $.getJSON("./programandframework.json", function(images){
+        console.log(images);
+        var x = '';
+        images.forEach(function(image) {
+            x  += '<img src="'+ image.path +'" class="rounded" alt="Cinque Terre" width="50" height="50"> ' 
+        });
+
+        $('.Programandframework').html(x);
+    });
   });
