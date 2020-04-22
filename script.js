@@ -80,7 +80,6 @@ $(document).ready(function(){
         images.forEach(function(image) {
             x  += '<img src="'+ image.path +'" class="rounded" alt="Cinque Terre" width="50" height="50">' 
         });
-
         $('.Programandframework').html(x);
     });
   });
