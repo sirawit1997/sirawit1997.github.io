@@ -1,14 +1,23 @@
 
 
 $(document).ready(function () {
-
+    // hide function
     $('#profile').click(function () {
         $('#myprofile').toggle()
+    })
+
+    $('#education').click(function () {
+        $('#myeducation').toggle()
     })
 
     $('#skillhide').click(function () {
         $('#skillcard').toggle()
     })
+
+    $('#workexphide').click(function () {
+        $('#myworkexp').toggle()
+    })
+    ///////////////////////////////////
 
     $('#usr').keyup(function () {
         var output = $('#usr').val();
@@ -81,6 +90,7 @@ $(document).ready(function () {
         $('.Programandframework').html(x);
     });
 
+
     // Loop create workexp
     $.getJSON("./workexp.json", function (result) {
         console.log(result);
@@ -96,7 +106,7 @@ $(document).ready(function () {
                     '</div>'+
                 '</div>'
                 });
-        $('#workexp').html(x);
+        $('#myworkexp').html(x);
     });
 
 });

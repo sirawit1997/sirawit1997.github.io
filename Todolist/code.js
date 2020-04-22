@@ -34,6 +34,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     });    
       currentUser = user;
       document.getElementById('authen').innerHTML= '<li class="nav-item"><a class="nav-link">'+currentUser.email+'</a></li><li class="nav-item"><a class="nav-link" data-toggle="tooltip" href="Login.html" onclick="onLogout(event)">Logout</a></li>'
+    
     } else {
       // No user is signed in.
       console.log("No one Login");
@@ -51,6 +52,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     
         });
         document.getElementById('tbody').innerHTML = str;
+        document.getElementById('addbeat').innerHTML= ' '
     });
     
     }
