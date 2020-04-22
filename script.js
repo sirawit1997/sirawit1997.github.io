@@ -4,6 +4,10 @@ $(document).ready(function(){
         $('#myprofile').toggle()
     })
 
+    $('#skillhide').click(function(){
+        $('#skillcard').toggle()
+    })
+
     $('#usr').keyup(function(){
         var output = $('#usr').val();
         console.log(output.length);
